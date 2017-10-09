@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Padiciti New App</string>
+
+    <!-- HOME : BOTTOM NAVIGATION : MENU LIST-->
+    <string name="title_1">Home</string>
+    <string name="title_2">My Trip</string>
+    <string name="title_3">Promos</string>
+    <string name="title_4">Profile</string>
+    <string name="title_5">More</string>
+
+    <string-array name="nav_bot_text">
+        <item>@string/title_1</item>
+        <item>@string/title_2</item>
+        <item>@string/title_3</item>
+        <item>@string/title_4</item>
+        <item>@string/title_5</item>
+    </string-array>
+    <string-array name="nav_bot_icon">
+        <item>@drawable/a_dummy_icon</item>
+        <item>@drawable/a_dummy_icon</item>
+        <item>@drawable/a_dummy_icon</item>
+        <item>@drawable/a_dummy_icon</item>
+        <item>@drawable/a_dummy_icon</item>
+    </string-array>
+    <string name="label_padipoint" translatable="false">PadiPoint</string>
+    <string name="label_padicash" translatable="false">PadiCash</string>
+    <string name="label_currency" translatable="false">Rp.</string>
+    <string name="label_train">Train</string>
+    <string name="label_flight">Flight</string>
+    <string name="label_bus">Bus</string>
+    <string name="label_railink">Railink</string>
+    <string name="label_hotel">Hotel</string>
+    <string name="label_bill">Bill Payment</string>
+    <string name="type_trip_one_way">One Way</string>
+    <string name="type_trip_round_trip">Round Trip</string>
+    <string name="label_org_city">Origination</string>
+    <string name="label_des_city">Destination</string>
+    <string name="label_dep_date">Departure Date</string>
+    <string name="label_ret_date">Return Date</string>
+    <string name="txt_adult">Adult</string>
+    <string name="txt_child">Child</string>
+    <string name="txt_Infant">Infant</string>
+    <string name="txt_infant_with_age">Infant (&lt; 2)</string>
+    <string name="txt_child_with_age">Child (2 - 11yr)</string>
+    <string name="txt_adult_with_age">Adult (&gt; 12yr)</string>
+    <string name="txt_choose_station">Stasion/City</string>
+    <string name="txt_search_train">Search Train</string>
+    <string name="txt_search_flight">Search Flight</string>
+
+</resources>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.padicon.padicitinewapp.MainActivity">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/box_form"
+            android:orientation="vertical">
+
+            <!-- OPTION TYPE TRIP -->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rdTypeTripOW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/type_trip_one_way"/>
+                <RadioButton
+                    android:id="@+id/rdTypeTripRT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/type_trip_round_trip"/>
+            </RadioGroup>
+
+            <!-- OPTION ROUTE -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/lbl_form"
+                        android:text="@string/label_org_city"/>
+                    <TextView
+                        android:id="@+id/txvOrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_choose_station"
+                        style="@style/shape_input"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/a_dummy_icon"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/lbl_form"
+                        android:text="@string/label_des_city"/>
+                    <TextView
+                        android:id="@+id/txvDes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_choose_station"
+                        style="@style/shape_input"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/a_dummy_icon"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/a_dummy_icon"
+                    android:layout_marginTop="70dp"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="@string/app_name"/>
+            </RelativeLayout>
+
+            <!-- OPTION DATE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/lbl_form"
+                    android:text="@string/label_dep_date"/>
+                <TextView
+                    android:id="@+id/txvDep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_dep_date"
+                    style="@style/shape_input"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/a_dummy_icon"/>
+                <LinearLayout
+                    android:id="@+id/lnrTypeTrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/lbl_form"
+                        android:text="@string/label_ret_date"/>
+                    <TextView
+                        android:id="@+id/txvRet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_ret_date"
+                        style="@style/shape_input"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/a_dummy_icon"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- OPTION PAX-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- ADULT -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/lbl_form"
+                        android:text="@string/txt_adult_with_age"/>
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        style="@style/shape_input">
+                        <TextView
+                            android:id="@+id/txvAdultMin"
+                            android:layout_width="50dp"
+                            android:layout_height="24dp"
+                            android:drawableLeft="@drawable/a_dummy_icon"
+                            android:contentDescription="@string/app_name"/>
+
+                        <TextView
+                            android:id="@+id/txvAdult"
+                            android:layout_width="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/txv_font_large"
+                            android:text="0"/>
+
+                        <TextView
+                            android:id="@+id/txvAdultPlus"
+                            android:layout_width="50dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentRight="true"
+                            android:drawableRight="@drawable/a_dummy_icon"
+                            android:contentDescription="@string/app_name"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- CHILD -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/lbl_form"
+                        android:text="@string/txt_adult_with_age"/>
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        style="@style/shape_input">
+                        <TextView
+                            android:id="@+id/txvChildMin"
+                            android:layout_width="50dp"
+                            android:layout_height="24dp"
+                            android:drawableLeft="@drawable/a_dummy_icon"
+                            android:contentDescription="@string/app_name"/>
+
+                        <TextView
+                            android:id="@+id/txvChild"
+                            android:layout_width="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/txv_font_large"
+                            android:text="0"/>
+
+                        <TextView
+                            android:id="@+id/txvChildPlus"
+                            android:layout_width="50dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentRight="true"
+                            android:drawableRight="@drawable/a_dummy_icon"
+                            android:contentDescription="@string/app_name"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- INFANT -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/lbl_form"
+                        android:text="@string/txt_adult_with_age"/>
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        style="@style/shape_input">
+                        <TextView
+                            android:id="@+id/txvInfantMin"
+                            android:layout_width="50dp"
+                            android:layout_height="24dp"
+                            android:drawableLeft="@drawable/a_dummy_icon"
+                            android:contentDescription="@string/app_name"/>
+
+                        <TextView
+                            android:id="@+id/txvInfant"
+                            android:layout_width="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/txv_font_large"
+                            android:text="0"/>
+
+                        <TextView
+                            android:id="@+id/txvInfantPlus"
+                            android:layout_width="50dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentRight="true"
+                            android:drawableRight="@drawable/a_dummy_icon"
+                            android:contentDescription="@string/app_name"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/txt_search_flight"/>
+
+</RelativeLayout>

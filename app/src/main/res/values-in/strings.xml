@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Padiciti New App</string>
+    <string name="title_1">Awal</string>
+    <string name="title_2">Pesanan</string>
+    <string name="title_3">Promo</string>
+    <string name="title_4">Profil</string>
+    <string name="title_5">Lainnya</string>
+    <string name="label_train">Kereta Api</string>
+    <string name="label_flight">Pesawat</string>
+    <string name="label_bus">Bis</string>
+    <string name="label_railink">Kereta Bandara</string>
+    <string name="label_hotel">Hotel</string>
+    <string name="label_bill">Beli/Bayar</string>
+    <string name="type_trip_one_way">Sekali Jalan</string>
+    <string name="type_trip_round_trip">Pulang Pergi</string>
+    <string name="label_org_city">Kota Asal</string>
+    <string name="label_des_city">Kota Tujuan</string>
+    <string name="label_dep_date">Tanggal Berangkat</string>
+    <string name="label_ret_date">Tanggal Pulang</string>
+    <string name="txt_adult">Dewasa</string>
+    <string name="txt_child">Anak</string>
+    <string name="txt_Infant">Bayi</string>
+    <string name="txt_infant_with_age">Bayi (&lt; 2thn)</string>
+    <string name="txt_child_with_age">Anak (2 - 11thn)</string>
+    <string name="txt_adult_with_age">Dewasa (&gt; 12thn)</string>
+    <string name="txt_choose_station">Pilih Stasiun/Kota</string>
+    <string name="txt_search_train">Cari Tiket Kereta</string>
+    <string name="txt_search_flight">Cari Tiket Pesawat</string>
+</resources>

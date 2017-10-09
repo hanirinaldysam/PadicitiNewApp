@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LabelBold">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/sam_dark_grey</item>
+    </style>
+
+    <style name="box_bot_shadow">
+        <item name="android:background">@drawable/background_white_bottom_shadow</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">11dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+    <style name="box_top_shadow">
+        <item name="android:background">@drawable/background_white_top_shadow</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">11dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <!-- GRID CATEGORY HOME-->
+    <style name="grid_cat_item">
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="grid_cat_icon">
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_width">42dp</item>
+        <item name="android:layout_height">42dp</item>
+    </style>
+    <style name="grid_cat_label">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+
+    <style name="box_form">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+    <style name="lbl_form">
+        <item name="android:textSize">@dimen/txt_font_small</item>
+        <item name="android:textColor">#6b7c93</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+    <style name="lbl_sub_form">
+        <item name="android:textSize">@dimen/txt_font_small</item>
+        <item name="android:textColor">#6b7c93</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+    <style name="shape_input">
+        <item name="android:background">@drawable/shape_input</item>
+        <item name="android:textSize">@dimen/txt_font_reguler</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+</resources>
