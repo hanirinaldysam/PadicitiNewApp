@@ -46,5 +46,8 @@
     <string name="txt_choose_station">Stasion/City</string>
     <string name="txt_search_train">Search Train</string>
     <string name="txt_search_flight">Search Flight</string>
+    <string name="txt_sort">Sort</string>
+    <string name="txt_filter">Filters</string>
+    <string name="txt_change_date">Change Date</string>
 
 </resources>

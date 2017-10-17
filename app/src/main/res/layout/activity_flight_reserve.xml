@@ -145,12 +145,11 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="16dp"
                         style="@style/shape_input">
-                        <TextView
+                        <View
                             android:id="@+id/txvAdultMin"
-                            android:layout_width="50dp"
+                            android:layout_width="24dp"
                             android:layout_height="24dp"
-                            android:drawableLeft="@drawable/a_dummy_icon"
-                            android:contentDescription="@string/app_name"/>
+                            android:background="@drawable/shape_circle_orange_border"/>
 
                         <TextView
                             android:id="@+id/txvAdult"
@@ -160,13 +159,12 @@
                             android:textSize="@dimen/txv_font_large"
                             android:text="0"/>
 
-                        <TextView
+                        <View
                             android:id="@+id/txvAdultPlus"
-                            android:layout_width="50dp"
+                            android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:layout_alignParentRight="true"
-                            android:drawableRight="@drawable/a_dummy_icon"
-                            android:contentDescription="@string/app_name"/>
+                            android:background="@drawable/shape_circle_orange_border"/>
                     </RelativeLayout>
                 </LinearLayout>
 
@@ -185,12 +183,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="16dp"
                         style="@style/shape_input">
-                        <TextView
-                            android:id="@+id/txvChildMin"
-                            android:layout_width="50dp"
+                        <View
+                            android:layout_width="24dp"
                             android:layout_height="24dp"
-                            android:drawableLeft="@drawable/a_dummy_icon"
-                            android:contentDescription="@string/app_name"/>
+                            android:background="@drawable/shape_circle_orange_border"/>
 
                         <TextView
                             android:id="@+id/txvChild"
@@ -200,13 +196,11 @@
                             android:textSize="@dimen/txv_font_large"
                             android:text="0"/>
 
-                        <TextView
-                            android:id="@+id/txvChildPlus"
-                            android:layout_width="50dp"
+                        <View
+                            android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:layout_alignParentRight="true"
-                            android:drawableRight="@drawable/a_dummy_icon"
-                            android:contentDescription="@string/app_name"/>
+                            android:background="@drawable/shape_circle_orange_border"/>
                     </RelativeLayout>
                 </LinearLayout>
 
@@ -225,12 +219,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="16dp"
                         style="@style/shape_input">
-                        <TextView
-                            android:id="@+id/txvInfantMin"
-                            android:layout_width="50dp"
+                        <View
+                            android:layout_width="24dp"
                             android:layout_height="24dp"
-                            android:drawableLeft="@drawable/a_dummy_icon"
-                            android:contentDescription="@string/app_name"/>
+                            android:background="@drawable/shape_circle_orange_border"/>
 
                         <TextView
                             android:id="@+id/txvInfant"
@@ -240,27 +232,33 @@
                             android:textSize="@dimen/txv_font_large"
                             android:text="0"/>
 
-                        <TextView
-                            android:id="@+id/txvInfantPlus"
-                            android:layout_width="50dp"
+                        <View
+                            android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:layout_alignParentRight="true"
-                            android:drawableRight="@drawable/a_dummy_icon"
-                            android:contentDescription="@string/app_name"/>
+                            android:background="@drawable/shape_circle_orange_border"/>
                     </RelativeLayout>
                 </LinearLayout>
-
             </LinearLayout>
-
         </LinearLayout>
-
     </ScrollView>
 
-    <Button
+    <LinearLayout
+        android:id="@+id/btnReserve"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button_orange"
         android:layout_margin="16dp"
-        android:layout_alignParentBottom="true"
-        android:text="@string/txt_search_flight"/>
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:text="@string/txt_search_flight"/>
+    </LinearLayout>
 
 </RelativeLayout>

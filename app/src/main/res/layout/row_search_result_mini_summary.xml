@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="8dp"
+    android:background="@drawable/shape_grey"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#6b7c93"
+        android:textSize="12sp"
+        android:text="DEPARTURE"/>
+
+    <TextView
+        android:layout_margin="4dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="#6b7c93"
+        android:text="Bali (DPS) - Jakarta (CGK), 29 Apr 17"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_orange_border"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:textColor="#FC8801"
+        android:textSize="12sp"
+        android:text="CHANGE"/>
+</LinearLayout>

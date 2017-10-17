@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.padicon.padicitinewapp.MainActivity">
+
+    <include
+        layout="@layout/toolbar"/>
+
+
+    <LinearLayout
+        android:id="@+id/lnrMiniSummary"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:background="@drawable/shape_grey">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#6b7c93"
+            android:textSize="12sp"
+            android:text="DEPARTURE"/>
+
+        <TextView
+            android:layout_margin="4dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#6b7c93"
+            android:text="Bali (DPS) - Jakarta (CGK), 29 Apr 17"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_orange_border"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:textColor="#FC8801"
+            android:textSize="12sp"
+            android:text="CHANGE"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:background="#6b7c93"
+        android:orientation="horizontal"
+        android:id="@+id/lnrOptionFilter">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                style="@style/option_filter_result_search_txt"
+                android:text="@string/txt_sort"/>
+        </LinearLayout>
+
+        <View
+            android:background="#FFFFFF"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                style="@style/option_filter_result_search_txt"
+                android:text="@string/txt_filter"/>
+        </LinearLayout>
+
+        <View
+            android:background="#FFFFFF"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                style="@style/option_filter_result_search_txt"
+                android:text="@string/txt_change_date"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@id/lnrMiniSummary"
+        android:layout_above="@id/lnrOptionFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/row_flight_result"/>
+            <include layout="@layout/row_flight_result"/>
+            <include layout="@layout/row_flight_result"/>
+            <include layout="@layout/row_flight_result"/>
+            <include layout="@layout/row_flight_result"/>
+            <include layout="@layout/row_flight_result"/>
+            <include layout="@layout/row_flight_result"/>
+            <include layout="@layout/row_flight_result"/>
+            <include layout="@layout/row_flight_result"/>
+            <include layout="@layout/row_flight_result"/>
+            <include layout="@layout/row_flight_result"/>
+            <include layout="@layout/row_flight_result"/>
+            <include layout="@layout/row_flight_result"/>
+            <include layout="@layout/row_flight_result"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

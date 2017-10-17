@@ -27,4 +27,7 @@
     <string name="txt_choose_station">Pilih Stasiun/Kota</string>
     <string name="txt_search_train">Cari Tiket Kereta</string>
     <string name="txt_search_flight">Cari Tiket Pesawat</string>
+    <string name="txt_sort">Urutkan</string>
+    <string name="txt_filter">Filter</string>
+    <string name="txt_change_date">Ganti Tanggal</string>
 </resources>

@@ -61,8 +61,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         lnrCatFlight.setOnClickListener(this)
 
-
-        (pagerSlideShow.getLayoutParams()).height = (resources.displayMetrics.heightPixels).toInt()
+        (pagerSlideShow.getLayoutParams()).height = (resources.displayMetrics.heightPixels)
     }
 }
 

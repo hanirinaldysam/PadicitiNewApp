@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.padicon.padicitinewapp.MainActivity">
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sam_blue"
+        android:minHeight="?attr/actionBarSize"
+        android:gravity="center"
+        android:theme="?attr/actionBarTheme">
+        <View
+            android:id="@+id/btnBack"
+            android:background="@drawable/a_dummy_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="8dp"/>
+        <EditText
+            android:background="@drawable/shape_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:height="32dp"
+            android:textSize="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:hint="Type City or Airport ..."/>
+        <View
+            android:background="@drawable/a_dummy_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/lnrOptionFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/row_flight_airport"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <include layout="@layout/row_flight_airport"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <include layout="@layout/row_flight_airport"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <include layout="@layout/row_flight_airport"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <include layout="@layout/row_flight_airport"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <include layout="@layout/row_flight_airport"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <include layout="@layout/row_flight_airport"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <include layout="@layout/row_flight_airport"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <include layout="@layout/row_flight_airport"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+            <include layout="@layout/row_flight_airport"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

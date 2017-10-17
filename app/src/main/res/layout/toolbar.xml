@@ -10,13 +10,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:gravity="center">
                 <TextView
+                    android:id="@+id/txvToolbar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Padiciti"
                     android:textSize="18sp"
                     android:textStyle="bold"
+                    android:textColor="#fff"/>
+                <TextView
+                    android:id="@+id/txvSubToolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Padiciti"
+                    android:textSize="14sp"
                     android:textColor="#fff"/>
         </LinearLayout>
 </android.support.v7.widget.Toolbar>
